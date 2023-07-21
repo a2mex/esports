@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: yellow; /* Brighter hover color */
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.landing{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    left: 15%;
+}
+
+.carousel{
+    background-color: #212529;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+
+#about{
+    background: url('./LOGO/maple.png') no-repeat;
+    background-color: #212529;
+    background-blend-mode:color-burn;
+    background-position: right;
+    background-size: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+}
+
+.buttons p{
+    font-size: 40px;
+    margin-top: 3rem;
+    text-shadow: 0 0 10px red;
+}
+
+.button
+{
+    border-radius: 40px;
+    background-color: white;
+    width: fit-content;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 15px 60px;
+}
+
+.but1{
+    background-color: red;
+    color: white;
+}
+
+.but3{
+    background-color: blue;
+    color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* player card styles */
+
+.team{
+    background: linear-gradient(#212529,#212529,rgb(74, 73, 73));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player
+{
+    width: 18%;
+    text-align: center;
+    transition: filter 1s ease;
+}
+
+.player h1{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.player h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.player:hover{
+    filter: drop-shadow(10px -5px 20px rgba(255, 255, 255, 0.368));
+}
+
+.player-image{
+    width: 100%;
+    border-radius: 0.8rem;
+    mix-blend-mode:hard-light;
+}
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    color: black;
+    font-size: 40px;
+    margin: 15px;
+    color: white;
+}
+
+.contact{
+    background: linear-gradient(#4A4949,#212529);
+}
+
+.aboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.aboutUs img{
+    position:sticky;
+    width: 50%;
+}
+
+.left{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.left h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.left p{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .team{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .player{
+        width: 70%;
+        margin: 20px;
+    }
+
+    .buttons{
+        width: fit-content;
+    }
+
+    .button{
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+
+    .buttons p{
+        font-size: 14px;
+    }
+
+    .aboutUs img{
+        width: 100%;
+    }
+
+    .aboutUs{
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        height: 100vh;
+    }
+
+    .left{
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .left h1{
+        font-size: 20px;
+    }
+
+    .left p{
+        font-size: 13px;
+    }
+
+    i{
+        font-size: 20px;
+    }
+}
+
+
