@@ -191,6 +191,34 @@ ul a{
 }
 
 
+.owner
+{
+    height: 100vh;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.owner p{
+    line-height: 1.5;
+    font-size: 20px;
+    width: 60vw;
+    text-align: center;
+}
+
+.owner h2{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+
+.owner img{
+    border-radius: 50%;
+    width: 250px;
+    mix-blend-mode:difference;
+}
 
 
 
@@ -246,6 +274,20 @@ ul a{
 
     i{
         font-size: 20px;
+    }
+
+    .owner img{
+        width: 200px;
+    }
+
+    .owner p{
+        font-size: 14px;
+        line-height: 1.5;
+        width: 90vw;
+    }
+
+    .owner{
+        height: 70vh;
     }
 }
 
